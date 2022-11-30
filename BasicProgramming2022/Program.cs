@@ -10,20 +10,20 @@ namespace BasicProgramming2022
     {
         static void Main(string[] args)
         {
-            int i;
-            Console.Write("Enter a Number : ");
-            i = int.Parse(Console.ReadLine());
-            if (i % 2 == 0)
-            {
-                Console.Write("Entered Number is an Even Number");
-                Console.ReadLine();
-            }
-            else
-            {
-                Console.Write("Entered Number is an Odd Number");
-                Console.ReadLine();
 
-            }
+            Console.WriteLine("Enter A: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter B: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int temp;
+            temp = a;
+            Console.WriteLine("Swapped Value of A= " + b);
+            Console.ReadLine();
+            Console.WriteLine("Swapped value of B= " + a);
+            Console.ReadLine();
+
         }
+
+        
     }
 }
