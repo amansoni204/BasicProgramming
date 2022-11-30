@@ -10,15 +10,19 @@ namespace BasicProgramming2022
     {
         static void Main(string[] args)
         {
-
-            double result;
-            Console.WriteLine("Enter The Power");
-            int Power = int.Parse(Console.ReadLine());
-            int a = 2;
-            for (int i = 0; i <= Power; i++)
+            Console.WriteLine("Enter the number to find the prime Factorisation : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int div = 2; div * div <= num; div++)
             {
-                result = Math.Pow(a, i);
-                Console.WriteLine(a + " power of " + i + " is " + result);
+                while (num % div == 0)
+                {
+                    num = num / div;
+                    Console.WriteLine(div + " ");
+                }
+            }
+            if (num != 1)
+            {
+                Console.WriteLine(num);
                 Console.ReadLine();
             }
 
