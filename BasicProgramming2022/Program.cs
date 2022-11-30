@@ -11,15 +11,24 @@ namespace BasicProgramming2022
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter A: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter B: ");
-            int b = Convert.ToInt32(Console.ReadLine());
-            int temp;
-            temp = a;
-            Console.WriteLine("Swapped Value of A= " + b);
-            Console.ReadLine();
-            Console.WriteLine("Swapped value of B= " + a);
+            char ch;
+
+            Console.WriteLine("Enter any character: ");
+            ch = Convert.ToChar(Console.ReadLine());
+
+
+            // Condition for vowel checking
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            {
+
+                Console.WriteLine(ch + " is Vowel.");
+
+            }
+            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            {
+                Console.WriteLine(ch + " is Consonant.");
+            }
+
             Console.ReadLine();
 
         }
